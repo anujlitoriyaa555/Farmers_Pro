@@ -15,14 +15,8 @@ namespace Farmers.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            if (Session["idUser"] != null)
-            {
-                return View();
-            }
-            else
-            {
-                return RedirectToAction("Login");
-            }
+            
+            return View();
         }
 
         //GET: Register
@@ -120,6 +114,34 @@ namespace Farmers.Controllers
             }
             return byte2String;
         }
+        public ActionResult About()
+        {
+            
+                return View();
+            
+        }
+        public ActionResult Contact()
+        {
+            
+                return View();
+            
+        }
+    
+        public ActionResult BidNow()
+        {
+            return View();
+        }
+
+        public ActionResult Farmer()
+        {
+            return View();
+        }
+        public ActionResult Signin_Register()
+        {
+            return View();
+        }
+
+
 
     }
 }
